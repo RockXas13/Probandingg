@@ -1,0 +1,69 @@
+<div class="row sin_margen bg_contacto">
+
+	<div class="container">
+
+		<div class="tit_contacto" id="contact">Let's Talk</div>
+
+		<div class="row">
+
+			
+
+			<div class="col-md-6">
+				<form (ngSubmit)="submitForm()" action="https://www.hvtalent.com/enviar_mail"  method="post" id="mail-form" class="formulario">
+					
+					<div class="row">
+						<div class="col-md-6">
+							<input type="text" class="input" name="nombre" placeholder="Name" required="required" ng-model="name">
+						</div>
+
+						<div class="col-md-6">
+							<input type="email" class="input" name="email" placeholder="Email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"  required="required" ng-model="emial">
+						</div>
+
+						<div class="col-md-12">
+							<textarea name="mensaje" rows="3" class="textarea" placeholder="Message" required="required" ng-model="mensaje"></textarea>
+						</div>
+
+						<div class="col-md-12 text-center"> 
+							
+						 
+						<input type="submit" value="Send"  class="bot_enviar">
+
+					</div>
+						 
+							{{name}}
+						 
+					</div>
+				</form>
+				 
+			</div>
+
+			<div class="col-md-6 borde_izq">
+				<div class="info_contacto">
+					<div class="tit_pais"><img src="assets/imagenes/bandera_eeuu.png" class="img-fluid"> EEUU</div>
+					<i class="fas fa-map-marker-alt"></i> 1641 Moffett ST, Hollywood, FL 33020<br><br>
+
+					<i class="fas fa-envelope"></i> sales@hvtalent.com<br><br>
+
+					<i class="fas fa-mobile-alt"></i> +1 (650) 614 1809<br><br> 
+					<br />
+					<div class="tit_pais"><img src="assets/imagenes/bandera_argentina.png" class="img-fluid"> ARG</div>
+					
+					<i class="fas fa-envelope"></i> Jobs Apply hr@hvtalent.com<br><br>
+					
+					<i class="fas fa-mobile-alt"></i> +54 9 11 3205 7003<br><br> 
+					<i>
+						<a href="https://api.whatsapp.com/send?phone=5491132057003"><img class="alignnone wp-image-2180 lazyloaded" src="assets/imagenes/whatsapp-icon-50x50.png" sizes="(max-width: 50px) 100vw, 50px"   width="50" height="50"></a>
+					</i>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+	</div>
+
+</div>
